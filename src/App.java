@@ -1,5 +1,6 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        Person max = new Person("Max", "Mustermann", 42);
+        System.out.println(max);
     }
 }

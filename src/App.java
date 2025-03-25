@@ -4,6 +4,8 @@ public class App {
         Auto auto = new Auto(max);
         max.setAuto(auto);
 
-        System.out.println(max);
+        Date heute = new Date(25, 24, 2025);
+        System.out.println(heute);
+        // System.out.println(max);
     }
 }

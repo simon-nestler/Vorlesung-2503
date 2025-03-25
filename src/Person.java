@@ -3,6 +3,7 @@ public class Person {
     private String firstname;
     private String lastname;
     private int age;
+    private Auto auto;
 
     public Person() {
         System.out.println("default: " + this);
@@ -35,6 +36,10 @@ public class Person {
         this.age = age;
     }
 
+    public void setAuto(Auto auto) {
+        this.auto = auto;
+    }
+
     public Person(Person p) {
         this(12);
         if (p != null) {
@@ -44,7 +49,12 @@ public class Person {
         }
     }
 
+    public String getName() {
+        return this.firstname + " " + this.lastname;
+    }
+
     public String toString() {
-        return "Person: " + this.firstname + " " + this.lastname + " (" + this.age + ")";
+        return "Person: " + this.firstname + " " + this.lastname +
+                " (" + this.age + ") " + this.auto;
     }
 }
